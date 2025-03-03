@@ -1,0 +1,6 @@
+// Plugin versions follow the Chaquopy compatibility table: Chaquopy 16.1 supports
+// Android Gradle plugin 8.9 to 8.13 and Python 3.8 to 3.13.
+plugins {
+    id 'com.android.application' version '8.13.0' apply false
+    id 'com.chaquo.python' version '16.1.0' apply false
+}
