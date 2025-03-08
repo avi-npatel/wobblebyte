@@ -1,0 +1,54 @@
+plugins {
+    id 'com.android.application'
+    id 'com.chaquo.python'
+}
+
+android {
+    namespace 'com.wobblebyte.app'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'com.wobblebyte.app'
+        // 30 is the first release where BiometricPrompt accepts strong biometrics
+        // and the device PIN together, which the vault key relies on.
+        minSdk 30
+        targetSdk 34
+        versionCode 1
+        versionName '1.0.0'
+
+        // Chaquopy bundles one Python runtime per ABI, so the ABIs are listed
+        // explicitly: real phones (arm64) and the emulator (x86_64). Pass
+        // -Pabis=arm64-v8a for a phone-only APK of about half the size.
+        ndk {
+            abiFilters.addAll((project.findProperty('abis') ?: 'arm64-v8a,x86_64').split(','))
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+}
+
+chaquopy {
+    defaultConfig {
+        version "3.12"
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'com.google.android.material:material:1.12.0'
+    implementation 'androidx.biometric:biometric:1.1.0'
+    implementation 'androidx.recyclerview:recyclerview:1.3.2'
+
+    testImplementation 'junit:junit:4.13.2'
+    // Android's own org.json is stubbed in local unit tests, so bring the real one.
+    testImplementation 'org.json:json:20240303'
+}

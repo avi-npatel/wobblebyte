@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="teal_100">#FFCDEDEA</color>
+    <color name="teal_700">#FF0F6B6B</color>
+    <color name="teal_900">#FF002F2F</color>
+    <color name="amber_700">#FFA55A00</color>
+    <color name="surface">#FFF6FAF9</color>
+
+    <color name="correct_bg">#FFD5F0DD</color>
+    <color name="wrong_bg">#FFF7D6D3</color>
+</resources>

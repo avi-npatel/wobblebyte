@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WobblyByte</string>
+
+    <!-- Navigation -->
+    <string name="nav_generate">Generate</string>
+    <string name="nav_vault">Vault</string>
+    <string name="nav_quiz">Quiz</string>
+    <string name="nav_learn">Learn</string>
+
+    <!-- Generate -->
+    <string name="generator_title">Password generator</string>
+    <string name="length_label">Length: %1$d</string>
+    <string name="slider_desc">Password length</string>
+    <string name="option_lower">Lowercase letters (a-z)</string>
+    <string name="option_upper">Capital letters (A-Z)</string>
+    <string name="option_digits">Numbers (0-9)</string>
+    <string name="option_symbols">Symbols (!@#$)</string>
+    <string name="option_ambiguous">Skip look-alike characters (I, l, 1, O, 0)</string>
+    <string name="action_generate">Generate</string>
+    <string name="action_copy">Copy</string>
+    <string name="shake_tip">Shake your phone to generate a new password.</string>
+    <string name="strength_line">%1$s, about %2$d bits of entropy</string>
+    <string name="latency_line">Generated in %1$.1f ms</string>
+    <string name="save_title">Save to vault</string>
+    <string name="hint_site">Website or app</string>
+    <string name="hint_username">Username or email</string>
+    <string name="action_save">Save to vault</string>
+    <string name="saved_ok">Saved to your vault.</string>
+    <string name="error_site_required">Enter a website or app name</string>
+    <string name="error_pick_type">Pick at least one character type.</string>
+    <string name="error_generate">Couldn\'t generate a password: %1$s</string>
+    <string name="copied_clear">Copied. The clipboard clears in 30 seconds.</string>
+
+    <!-- Unlock -->
+    <string name="unlock_title">Unlock WobblyByte</string>
+    <string name="unlock_subtitle">Confirm it\'s you to use your saved passwords</string>
+    <string name="error_no_screen_lock">Set a screen lock (PIN, pattern, or biometrics) in system settings first. WobblyByte keeps its encryption key behind it.</string>
+    <string name="error_key_invalidated">The vault key was reset because the screen lock was removed. Saved passwords can\'t be recovered.</string>
+    <string name="error_generic">Something went wrong (%1$s).</string>
+
+    <!-- Vault -->
+    <string name="vault_title">Vault</string>
+    <string name="vault_empty">No saved passwords yet. Generate one and save it from the Generate tab.</string>
+    <plurals name="saved_count">
+        <item quantity="one">%d saved password</item>
+        <item quantity="other">%d saved passwords</item>
+    </plurals>
+    <string name="entry_saved_on">Saved %1$s</string>
+    <string name="entry_message">Username: %1$s\nPassword: %2$s</string>
+    <string name="copy_password">Copy password</string>
+    <string name="close">Close</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete_title">Delete this password?</string>
+    <string name="delete_message">%1$s will be removed from this phone. This can\'t be undone.</string>
+
+    <!-- Quiz -->
+    <string name="quiz_title">Cybersecurity quizzes</string>
+    <string name="quiz_intro">Pick a topic. Every attempt is saved so you can see your score improve.</string>
+    <string name="quiz_error">The quiz content couldn\'t be loaded.</string>
+    <string name="quiz_not_taken">Not taken yet</string>
+    <string name="quiz_question_count">%1$d questions</string>
+    <string name="quiz_progress">Question %1$d of %2$d</string>
+    <string name="quiz_correct">Correct.</string>
+    <string name="quiz_incorrect">Not quite.</string>
+    <string name="quiz_next">Next question</string>
+    <string name="quiz_finish">See results</string>
+    <string name="quiz_result_title">You got %1$d of %2$d</string>
+    <string name="quiz_retake">Retake</string>
+    <string name="quiz_back">Back to quizzes</string>
+    <string name="quiz_first_attempt">First attempt: %1$d%%</string>
+    <string name="quiz_history_line">First try %1$d%%, latest %2$d%%, best %3$d%%</string>
+    <string name="quiz_delta_up">Up %1$d points since your first try.</string>
+    <string name="quiz_delta_down">Down %1$d points since your first try.</string>
+    <string name="quiz_delta_same">Same as your first try.</string>
+
+    <!-- Learn -->
+    <string name="learn_title">Learn more</string>
+    <string name="learn_intro">Free tools and guides from groups that work on this every day. Never type a real password into a checker; test one with the same pattern instead.</string>
+    <string name="learn_open_error">No browser found to open this link.</string>
+    <string name="learn_bitwarden_title">Password strength tester</string>
+    <string name="learn_bitwarden_desc">Bitwarden\'s tool estimates how long a password would take to crack.</string>
+    <string name="learn_hibp_title">Have I Been Pwned</string>
+    <string name="learn_hibp_desc">Check whether your email address appears in a known data breach.</string>
+    <string name="learn_cisa_title">CISA: Secure Our World</string>
+    <string name="learn_cisa_desc">Short guides on passwords, phishing, updates, and multifactor authentication.</string>
+    <string name="learn_ftc_title">FTC: Recognize phishing scams</string>
+    <string name="learn_ftc_desc">How to spot fake messages and what to do if you already replied.</string>
+    <string name="learn_eff_title">EFF Surveillance Self-Defense</string>
+    <string name="learn_eff_desc">Plain-language guides to protecting your privacy online and on your devices.</string>
+</resources>
