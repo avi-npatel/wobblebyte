@@ -1,0 +1,296 @@
+{
+  "modules": [
+    {
+      "id": "passwords",
+      "title": "Passwords",
+      "summary": "Length, reuse, and password managers.",
+      "questions": [
+        {
+          "prompt": "Which password would take an attacker the longest to crack?",
+          "options": [
+            "P@ssw0rd123!",
+            "Summer2026!",
+            "fern-glacier-lantern-ocean-tulip",
+            "Qwerty!1234"
+          ],
+          "correctIndex": 2,
+          "explanation": "Length does most of the work. Five unrelated words picked at random give far more combinations than a short password with swapped symbols, and attackers' wordlists already include substitutions like @ for a."
+        },
+        {
+          "prompt": "You reuse one password on a shopping site and on your email. The shopping site is breached. What is the biggest risk?",
+          "options": [
+            "Only the shopping account is at risk",
+            "Attackers try the leaked password on your email and other sites",
+            "Your email provider locks the account automatically",
+            "The breach makes your password shorter"
+          ],
+          "correctIndex": 1,
+          "explanation": "Attackers run leaked email and password pairs against popular sites in bulk. This is called credential stuffing, and reuse is what makes it work."
+        },
+        {
+          "prompt": "Why is a password manager a good idea for most people?",
+          "options": [
+            "It lets you use one strong password everywhere",
+            "It makes phishing pages impossible to open",
+            "It removes the need for two-factor authentication",
+            "It stores a different strong password for every account behind one unlock"
+          ],
+          "correctIndex": 3,
+          "explanation": "You only remember one master unlock, so every account can have its own long random password. Managers also tend to autofill only on the real site, which helps against fake login pages."
+        },
+        {
+          "prompt": "Which second factor protects you best against a fake login page?",
+          "options": [
+            "A code sent by text message",
+            "Answers to security questions",
+            "A hardware security key or passkey",
+            "A code from an authenticator app"
+          ],
+          "correctIndex": 2,
+          "explanation": "Keys and passkeys are tied to the real site's address, so they refuse to work on a look-alike page. Text codes can be intercepted or SIM-swapped, and app codes can be typed into a fake page. Security questions aren't a second factor at all."
+        },
+        {
+          "prompt": "A site you use announces a data breach. What should you do first?",
+          "options": [
+            "Wait to see whether the company contacts you",
+            "Change that password, and change it anywhere else you reused it",
+            "Add a number to the end of the old password",
+            "Delete the app and keep the password"
+          ],
+          "correctIndex": 1,
+          "explanation": "Assume the old password is already in attackers' hands. Changing it, and any reused copies, closes the door before they try it elsewhere."
+        },
+        {
+          "prompt": "How often should you change a strong, unique password that hasn't been exposed?",
+          "options": [
+            "Only when there's a reason, like a breach or a sign someone else has used it",
+            "Every 30 days",
+            "Every time you log in",
+            "Never, even after a breach"
+          ],
+          "correctIndex": 0,
+          "explanation": "Forced regular changes tend to produce weaker, predictable passwords. Current guidance, including NIST's, is to change a password when there is evidence of compromise rather than on a schedule."
+        }
+      ]
+    },
+    {
+      "id": "phishing",
+      "title": "Phishing",
+      "summary": "Spot fake emails, texts, and links.",
+      "questions": [
+        {
+          "prompt": "Which detail in an email is the strongest sign of phishing?",
+          "options": [
+            "It greets you by name",
+            "A link whose real address doesn't match the company it claims to be from",
+            "It arrived in the morning",
+            "It includes the company's logo"
+          ],
+          "correctIndex": 1,
+          "explanation": "Names and logos are easy to copy. Hover over a link, or press and hold it on your phone, to preview where it actually goes before you tap."
+        },
+        {
+          "prompt": "A text says your package is held and asks for a $1.99 fee at a link. What's the safest move?",
+          "options": [
+            "Pay it, it's only $1.99",
+            "Reply STOP to unsubscribe",
+            "Skip the link and check the delivery status in the carrier's own app or website",
+            "Forward it to a friend to check"
+          ],
+          "correctIndex": 2,
+          "explanation": "Small fees are a common hook to collect your card details. Replying, even with STOP, confirms your number is active."
+        },
+        {
+          "prompt": "Which web address belongs to PayPal?",
+          "options": [
+            "https://www.paypal.com/signin",
+            "https://paypal.com.account-verify.net/signin",
+            "https://secure-paypal-login.com",
+            "https://paypa1.com/signin"
+          ],
+          "correctIndex": 0,
+          "explanation": "Look at the part before the first single slash and read it from the right. In the second address that ends in account-verify.net, so paypal.com is only a decoy subdomain. The other two are look-alike domains."
+        },
+        {
+          "prompt": "An email from 'IT' says to confirm your password within 24 hours or lose access. What makes it suspicious?",
+          "options": [
+            "IT teams only contact people by phone",
+            "Real IT teams don't ask for your password, and the deadline is meant to rush you",
+            "24 hours is too generous a deadline",
+            "Emails can't come from an IT department"
+          ],
+          "correctIndex": 1,
+          "explanation": "Legitimate IT staff never need your password. Urgency is the attacker's tool: it pushes you to act before you think."
+        },
+        {
+          "prompt": "You typed your password into a page you now think was phishing. What should you do?",
+          "options": [
+            "Nothing, as long as you closed the tab",
+            "Restart the computer",
+            "Wait for your bank to send an alert",
+            "Change that password right away, plus any account that shares it, turn on two-factor authentication, and report the message"
+          ],
+          "correctIndex": 3,
+          "explanation": "Assume the attacker has the password. Changing it quickly, and anywhere you reused it, limits the damage, and two-factor authentication blocks a stolen password on its own."
+        },
+        {
+          "prompt": "What is spear phishing?",
+          "options": [
+            "Phishing sent only by phone call",
+            "A virus attached to a file",
+            "A message tailored to one person or group using details about them",
+            "Mass email sent to random addresses"
+          ],
+          "correctIndex": 2,
+          "explanation": "Attackers use your name, job, or recent activity to make the message believable. That personal detail is what separates it from ordinary mass phishing."
+        }
+      ]
+    },
+    {
+      "id": "scams",
+      "title": "Scams and social engineering",
+      "summary": "Pressure tactics, fake support, and QR codes.",
+      "questions": [
+        {
+          "prompt": "Someone calls saying they're from your bank's fraud team and asks you to read out the code you just received by text. What do you do?",
+          "options": [
+            "Read it out, since they're trying to protect you",
+            "Ask them to read the code to you first",
+            "Read only the last three digits",
+            "Hang up and call the number on the back of your card"
+          ],
+          "correctIndex": 3,
+          "explanation": "That code approves a login or payment the caller started. Banks never need it from you. Calling back on a number you trust confirms whether the call was real."
+        },
+        {
+          "prompt": "A browser popup says your computer is infected and tells you to call a number now. What is it most likely?",
+          "options": [
+            "A real alert from your operating system",
+            "A scare tactic to get you on the phone with a scammer",
+            "A sign your antivirus is working",
+            "A routine browser update"
+          ],
+          "correctIndex": 1,
+          "explanation": "Real security software doesn't ask you to phone a stranger. Close the tab or window, and if it won't close, restart the browser."
+        },
+        {
+          "prompt": "You find a USB drive labeled 'Salaries' in a parking lot. What's the best move?",
+          "options": [
+            "Plug it into your laptop to find the owner",
+            "Plug it into an old computer",
+            "Hand it to IT or security without plugging it in",
+            "Format it and keep it"
+          ],
+          "correctIndex": 2,
+          "explanation": "Attackers leave drives where curious people will find them. A drive can run malware the moment it is connected."
+        },
+        {
+          "prompt": "A coworker's chat account asks you to buy gift cards urgently and send the codes. What should you suspect?",
+          "options": [
+            "The account was taken over or is being impersonated, so check with them another way",
+            "A normal team purchase",
+            "A payroll rule change",
+            "A harmless typo in the chat"
+          ],
+          "correctIndex": 0,
+          "explanation": "Urgent gift card requests are a classic impersonation scam. Call or message the person on a different channel before doing anything."
+        },
+        {
+          "prompt": "You keep getting login approval prompts on your phone that you didn't start. What is probably happening?",
+          "options": [
+            "Your phone has a glitch",
+            "Someone has your password and hopes you'll approve a prompt to make it stop",
+            "Your account was upgraded",
+            "The app is running a test"
+          ],
+          "correctIndex": 1,
+          "explanation": "This is called MFA fatigue. Deny every prompt, change your password right away, and report it."
+        },
+        {
+          "prompt": "A poster in a cafe has a QR code promising free gift cards. What is the risk?",
+          "options": [
+            "It can lead to a fake or malicious page, like any other link",
+            "QR codes can't open websites",
+            "There's no risk if you don't type anything in",
+            "They only work inside the original app"
+          ],
+          "correctIndex": 0,
+          "explanation": "A QR code is a link you can't read. Treat it like a link from a stranger, and be wary of codes stuck over other codes."
+        }
+      ]
+    },
+    {
+      "id": "browsing",
+      "title": "Safe browsing and devices",
+      "summary": "Wi-Fi, updates, permissions, and backups.",
+      "questions": [
+        {
+          "prompt": "What does the padlock in your browser's address bar tell you?",
+          "options": [
+            "The site is safe and trustworthy",
+            "Your connection to the site is encrypted, but the site itself could still be a scam",
+            "A security team has checked the site",
+            "The site doesn't show ads"
+          ],
+          "correctIndex": 1,
+          "explanation": "The padlock means traffic between you and the site is encrypted. Scammers can get padlocks for their look-alike sites too, so check the address as well."
+        },
+        {
+          "prompt": "Which is the safest way to check your bank balance while you're away from home?",
+          "options": [
+            "Open Wi-Fi at a cafe where the network name matches the cafe",
+            "Any Wi-Fi, as long as the site shows a padlock",
+            "A hotel Wi-Fi network if the password is on the door",
+            "Your phone's cellular data or your own hotspot"
+          ],
+          "correctIndex": 3,
+          "explanation": "Your own connection isn't shared with strangers, and attackers can set up fake Wi-Fi networks with convincing names."
+        },
+        {
+          "prompt": "Why should you install system and app updates promptly?",
+          "options": [
+            "They mostly add new emoji",
+            "They often fix security holes attackers are already using",
+            "They always make the device faster",
+            "They're optional on modern phones"
+          ],
+          "correctIndex": 1,
+          "explanation": "Updates often include fixes for known vulnerabilities. Once a fix is public, attackers have a map of what to exploit on devices that haven't installed it."
+        },
+        {
+          "prompt": "A flashlight app asks for your contacts, microphone, and location. What should you do?",
+          "options": [
+            "Allow everything, it can't work otherwise",
+            "Allow only the microphone",
+            "Deny what it doesn't need, or pick a different app",
+            "Allow them and uninstall the app later"
+          ],
+          "correctIndex": 2,
+          "explanation": "A flashlight needs none of those. Permissions beyond what an app's job requires are a reason to deny them or choose another app."
+        },
+        {
+          "prompt": "What is the best protection against ransomware that locks your files?",
+          "options": [
+            "Backups kept offline or in a separate account, with a restore tested now and then",
+            "Paying quickly so the files come back",
+            "Hiding your files in a folder with a plain name",
+            "A longer Wi-Fi password"
+          ],
+          "correctIndex": 0,
+          "explanation": "With a clean backup you can wipe the device and restore without paying. Backups that stay connected to your computer can be encrypted along with everything else."
+        },
+        {
+          "prompt": "What should you do before selling or recycling an old phone?",
+          "options": [
+            "Delete a few photos",
+            "Remove the SIM card only",
+            "Sign out of your accounts, back up what you need, then factory reset it",
+            "Nothing, data is erased when the phone powers off"
+          ],
+          "correctIndex": 2,
+          "explanation": "Signing out removes the phone from your accounts and turns off device locks tied to them. A factory reset then wipes the rest."
+        }
+      ]
+    }
+  ]
+}
