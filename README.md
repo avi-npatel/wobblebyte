@@ -1,14 +1,17 @@
-# wobblebyte
+# WobblyByte
 
 An Android app that generates strong passwords, stores them in an encrypted vault, and teaches basic cybersecurity through short quizzes.
 
-This is a 2022 hackathon entry built in MIT App Inventor that won its event. This version is native Android (Java) with the generation logic in Python, written from scratch to match the project's description and to be runnable and reviewable.
+This is a 2026 rebuild. The original WobblyByte was a 2022 hackathon entry built in MIT App Inventor that won its event. This version is native Android (Java) with the generation logic in Python, written from scratch to match the project's description and to be runnable and reviewable.
 
 ## What it does
 
 **Generate.** Choose a length from 8 to 64 and any mix of lowercase, capitals, numbers, and symbols. An option skips look-alike characters (`I l 1 O 0 o`). Every password is guaranteed to contain at least one character from each type you picked. Shake the phone to generate another one. Each result shows an estimated strength and how long the Python call took, measured around the Java-to-Python round trip on the device.
+
 **Vault.** Save a password with a site name and username. Opening an entry asks for your fingerprint, face, or PIN first.
+
 **Quiz.** Four modules (password habits, phishing, scams, safe browsing) with six questions each. Every attempt is saved, and the results screen shows your first score, latest score, best score, and the change since your first try.
+
 **Learn.** Links to the Bitwarden strength tester, Have I Been Pwned, CISA, the FTC, and the EFF.
 
 ## How it is built
